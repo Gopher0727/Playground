@@ -1,0 +1,30 @@
+site_name: My Playground
+
+nav:
+  - Home: index.md
+  # - Posts:
+  - Resources: Resources.md
+  - About: about.md
+
+theme:
+  name: material
+  # icon:
+  #   logo:
+  #   repo:
+  language: en # zh
+  palette:
+    scheme: default
+    primary: deep purple
+    accent: amber
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+
+extra:
+  generator: false
+
+extra_javascript:
+  - scripts/copyright.js
+
+extra_css:
+  - styles/copyright.css
