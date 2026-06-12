@@ -6,14 +6,6 @@
 2. [The Boring Internet](https://www.terrygodier.com/the-boring-internet)
 3. [Learn to become a Go developer](https://roadmap.sh/golang)
 
-## Golang Libraries
-
-1. [sonic](https://github.com/bytedance/sonic)  
-A blazingly fast JSON serializing & deserializing library, accelerated by JIT and SIMD.
-
-2. [netpoll](https://github.com/cloudwego/netpoll)  
-A high-performance non-blocking I/O networking framework, which focused on RPC scenarios.
-
 ## Fonts
 
 1. [Maple Mono](https://github.com/subframe7536/maple-font)

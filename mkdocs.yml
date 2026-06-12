@@ -4,8 +4,11 @@ nav:
   - Home: index.md
   - Posts:
       - Linux:
-          - eBPF: linux/eBPF.md
-          - uring: linux/uring.md
+          - eBPF: posts/linux/eBPF.md
+          - uring: posts/linux/uring.md
+      - programming language:
+          - Comparison: posts/programming language/comparison.md
+          - Golang: posts/programming language/golang.md
   - Resources: Resources.md
   - Editor: editor.md
   - About: about.md
@@ -20,9 +23,7 @@ theme:
     scheme: default
     primary: deep purple
     accent: amber
-  font:
-    text: Noto Sans SC
-    code: Fira Code
+  font: Fira Code Nerd Font # \n text: Noto Sans SC \n code: Fira Code Nerd Font
 
 extra:
   generator: false
