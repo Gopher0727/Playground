@@ -2,8 +2,12 @@ site_name: My Playground
 
 nav:
   - Home: index.md
-  # - Posts:
+  - Posts:
+      - Linux:
+          - eBPF: linux/eBPF.md
+          - uring: linux/uring.md
   - Resources: Resources.md
+  - Editor: editor.md
   - About: about.md
 
 theme:
@@ -25,6 +29,9 @@ extra:
 
 extra_javascript:
   - scripts/copyright.js
+  - scripts/editor.js
 
 extra_css:
   - styles/copyright.css
+  - styles/card.css
+  - styles/vditor.css

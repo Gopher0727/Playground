@@ -1,0 +1,15 @@
+#vditor {
+    width: 100% !important;
+}
+
+#vditor .vditor-editor {
+    width: 100% !important;
+}
+
+#vditor .vditor-content {
+    width: 100% !important;
+}
+
+.md-content {
+    max-width: none !important;
+}
