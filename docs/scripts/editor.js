@@ -5,8 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
         script.onload = function () {
             new Vditor("vditor", {
                 height: 600,
-                mode: "wysiwyg",
+                mode: "sv",
+                cdn: "https://cdn.jsdelivr.net/npm/vditor",
                 cache: { enable: false },
+                preview: {
+                    math: { engine: "KaTeX" },
+                    markdown: { codeBlockPreview: true },
+                }
             });
         };
         document.head.appendChild(script);

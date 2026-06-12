@@ -11,3 +11,8 @@
 #vditor .vditor-sv {
     width: 100% !important;
 }
+
+/* 隐藏预览区设备切换按钮（Desktop/Tablet/Mobile/Wechat） */
+#vditor .vditor-preview__action {
+    display: none !important;
+}
