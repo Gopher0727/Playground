@@ -25,6 +25,7 @@ theme:
   name: material # 使用 Material for MkDocs 主题
   features: # 主题特性开关
     - navigation.indexes # 让有 index.md 的导航父标题可点击
+    - toc.follow          # 滚动时右侧目录自动高亮当前标题
   # icon:
   #   logo:
   #   repo:
