@@ -1,0 +1,16 @@
+/* 解除页面内容区的最大宽度限制 */
+.md-grid {
+    max-width: none !important;
+}
+
+.md-main__inner {
+    max-width: none !important;
+}
+
+.md-content {
+    max-width: none !important;
+}
+
+.md-content__inner {
+    max-width: none !important;
+}

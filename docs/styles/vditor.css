@@ -1,15 +1,13 @@
+/* 编辑器容器宽度 */
 #vditor {
     width: 100% !important;
 }
 
-#vditor .vditor-editor {
+/* 编辑器内部各模块宽度 */
+#vditor .vditor,
+#vditor .vditor-editor,
+#vditor .vditor-content,
+#vditor .vditor-toolbar,
+#vditor .vditor-sv {
     width: 100% !important;
-}
-
-#vditor .vditor-content {
-    width: 100% !important;
-}
-
-.md-content {
-    max-width: none !important;
 }
