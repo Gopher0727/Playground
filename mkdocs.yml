@@ -6,6 +6,10 @@ site_name: My Playground
 # 第一个无标签的子项（如 posts/linux/index.md）会被合并为父级页面
 nav:
   - Home: index.md
+  - Database:
+    - posts/database/index.md
+    - Postgres:
+      - Returning: posts/database/postgres/returning.md
   - Linux:
     - posts/linux/index.md
     - eBPF: posts/linux/eBPF.md
