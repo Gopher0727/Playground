@@ -190,7 +190,7 @@ $$
 两次注意力计算均经过残差归一化及前馈网络。这些流程构成一个解码层，多个解码层堆叠组成解码器。
 
 [Transformer是什么？架构是怎么样的？](https://www.bilibili.com/opus/1197329452166545431)
-![解码器结构示意图](../../assets/decoder.png)  
+![解码器结构示意图](../../../assets/decoder.png)  
 
 > 对于 LLM（如 GPT），只使用 Transformer 的解码器部分（Decoder-only）。对于需要理解输入的任务（如翻译、BERT），使用编码器或编码器-解码器完整结构。ViT 则将图像切分为 patch，通过线性投影转为向量序列，直接送入标准 Transformer 处理——由于 Transformer 缺少 CNN 的局部性和平移不变性归纳偏置，ViT 通常需要更大规模数据训练才能匹敌 CNN。
 

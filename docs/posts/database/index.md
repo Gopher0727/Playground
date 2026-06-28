@@ -1,3 +1,3 @@
 # Database
 
-- [Postgres](./postgres/) - PostgreSQL 相关内容
+- [Postgres](postgres/index.md) - PostgreSQL 相关内容
