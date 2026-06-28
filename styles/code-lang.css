@@ -1,0 +1,17 @@
+/* 代码块语言标识 — 与复制按钮并列，垂直居中 */
+.md-code-lang {
+    display: inline-flex;
+    align-items: center;
+    height: 1.5em;
+    font-size: .55rem;
+    font-weight: 700;
+    color: var(--md-code-fg-color);
+    background: var(--md-code-bg-color);
+    border: .05rem solid var(--md-default-fg-color--lightest);
+    border-radius: .15rem;
+    padding: 0 .4em;
+    letter-spacing: .05em;
+    user-select: none;
+    margin-right: .4em;
+    opacity: .65;
+}
