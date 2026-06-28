@@ -9,6 +9,7 @@ nav:
   - Database:
     - posts/database/index.md
     - Postgres:
+      - posts/database/postgres/index.md
       - Returning: posts/database/postgres/returning.md
   - Linux:
     - posts/linux/index.md
@@ -36,7 +37,8 @@ theme:
   name: material # 使用 Material for MkDocs 主题
   features: # 主题特性开关
     - navigation.indexes # 让有 index.md 的导航父标题可点击
-    - toc.follow          # 滚动时右侧目录自动高亮当前标题
+    - toc.follow         # 滚动时右侧目录自动高亮当前标题
+    - content.code.copy  # 代码块一键复制按钮
   # icon:
   #   logo:
   #   repo:
@@ -52,8 +54,8 @@ theme:
 
 # MkDocs 插件
 plugins:
-  - search        # 内置搜索插件（显式声明 plugins 后必须手动包含）
-  - section-index # 让有子项的导航标题变为可点击的 section 页面
+  - search        # 内置搜索插件
+  # ponytail: section-index 的功能已被 Material 的 navigation.indexes 覆盖，删掉消除 ProperDocs 警告
 
 # 额外配置
 extra:
@@ -61,6 +63,10 @@ extra:
 
 # Markdown 扩展
 markdown_extensions:
+  - pymdownx.superfences: # 启用 linenums / title 等代码块属性
+  - pymdownx.highlight: # 代码块语法高亮
+      pygments_lang_class: true
+      linenums: true            # 全局行号
   - pymdownx.arithmatex: # 数学公式渲染（配合 MathJax）
       generic: true
 
@@ -68,11 +74,13 @@ markdown_extensions:
 extra_javascript:
   - scripts/copyright.js                                        # 页脚版权信息
   - scripts/editor.js                                           # Vditor 编辑器初始化
+  - scripts/code-lang.js                                        # 代码块语言标识
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js # 数学公式渲染
 
 # 额外引入的 CSS 文件
 extra_css:
-  - styles/copyright.css   # 页脚样式
-  - styles/card.css        # 卡片样式（圆角、阴影、悬停浮动）
-  - styles/vditor.css      # Vditor 编辑器样式
-  - styles/layout.css      # 页面布局（内容区宽度等）
+  - styles/copyright.css # 页脚样式
+  - styles/card.css      # 卡片样式（圆角、阴影、悬停浮动）
+  - styles/vditor.css    # Vditor 编辑器样式
+  - styles/layout.css    # 页面布局（内容区宽度等）
+  - styles/code-lang.css # 代码块语言标识

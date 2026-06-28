@@ -1,4 +1,6 @@
 .venv
 
+.claude/
+
 # deploy
 site
